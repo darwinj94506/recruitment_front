@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.input-box {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}

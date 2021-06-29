@@ -1,0 +1,20 @@
+<div class="container">
+    <form [formGroup]="loginForm" action="" class="form">
+        <h2>Inicio de Sesión</h2>
+        <input type="email" name="email" formControlName="email" class="box" placeholder="Ingrese su Email">
+        <span class="help-block">
+        </span>
+        <input type="text" name="codigoApp" formControlName="codeApp" class="box" placeholder="Ingrese el código de APP">
+        <span class="help-block" *ngIf="formsErrors.codeApp">
+            {{formsErrors.codeApp}}
+        </span>
+        <input type="password" name="password"  formControlName="password"  formControlName="email" class="box" placeholder="Ingrese su contraseña">
+        <span class="help-block" *ngIf="formsErrors.password">
+            {{formsErrors.password}}
+        </span>
+        <input type="button" value="SING IN" id="submit" (click)="onSubmit()"> 
+    </form>
+    <div class="side">
+        <img src="assets/img.png" alt="">
+    </div>
+</div>
